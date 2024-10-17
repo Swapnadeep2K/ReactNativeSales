@@ -1,11 +1,20 @@
 import { Tabs } from 'expo-router';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { useNavigation } from "@react-navigation/native";
 
 export default function TabLayout() {
+  const navigation = useNavigation();
+  // Customize the header when the screen is loaded
+  useEffect(() => {
+    navigation.setOptions({
+      headerShown: false,
+    });
+  }, [navigation]);
+
   const colorScheme = useColorScheme();
 
   return (
@@ -15,7 +24,7 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="listing"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
