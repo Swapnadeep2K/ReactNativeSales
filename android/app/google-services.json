@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260738560648",
+    "project_id": "salespro-2ba4c",
+    "storage_bucket": "salespro-2ba4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260738560648:android:c30d7a346075f6012ae53d",
+        "android_client_info": {
+          "package_name": "com.dragoner.SalesPro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJBQGsB6t-R6998uznx_GOtSh0Q04oZFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
